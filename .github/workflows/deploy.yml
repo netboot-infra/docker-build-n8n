@@ -25,7 +25,7 @@ jobs:
       with:
         push: true
         tags: |
-          ghcr.io/${{ github.repository }}:latest
-          ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+          ghcr.io/netboot-infra/n8n:latest
+          ghcr.io/netboot-infra/n8n:${{ github.ref_name }}
         build-args: |
             VERSION_TAG=${{ github.ref_name }}

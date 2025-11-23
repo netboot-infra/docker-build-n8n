@@ -21,4 +21,4 @@ jobs:
       with:
         push: false
         tags: |
-          ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+          ghcr.io/netboot-infra/n8n:${{ github.ref_name }}
