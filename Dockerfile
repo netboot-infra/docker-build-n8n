@@ -21,6 +21,6 @@ RUN sed -i.bak 's#await this\.manager\.clear();#//await this.manager.clear();#g'
 RUN sed -i.bak 's#await this\.manager\.renew();#//await this.manager.renew();#g' /usr/local/lib/node_modules/n8n/dist/license.js
 RUN sed -i.bak 's#await this\.manager\.shutdown();#//await this.manager.shutdown();#g' /usr/local/lib/node_modules/n8n/dist/license.js
 RUN sed -i.bak 's#showNonProdBanner: this\.license\.isLicensed(constants_1\.LICENSE_FEATURES\.SHOW_NON_PROD_BANNER),#showNonProdBanner: false,#g' /usr/local/lib/node_modules/n8n/dist/services/frontend.service.js
-RUN sed -i.bak "s#const limit =.*/const limit = 999;#" /usr/local/lib/node_modules/n8n/dist/services/project.service.ee.js
+RUN sed -i.bak "s#const limit =.*#const limit = 999;#" /usr/local/lib/node_modules/n8n/dist/services/project.service.ee.js
 
 USER node
